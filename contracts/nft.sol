@@ -50,6 +50,8 @@ contract NFT is  ERC721URIStorage, ReentrancyGuard {
         s_listingFee = 0.0025 ether;
     }
 
+    
+
     function createMarketItem( address nftContract, uint256 tokenId, uint256 price) public payable nonReentrant {
         if (price <= 0)
             revert NFTMarket__Price({message: "Price must be above zero"});

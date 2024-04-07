@@ -221,11 +221,7 @@ export default {
     async onFileChange(e) {
       const file = e.target.files[0]
       try {
-        //let cid = await this.addFileToIpfs(file);
-        //this.images.push({
-        //  src: `${this.ipfs_gateway}${cid.path}`,
-        //  alt: file.name
-        //});
+        
         var reader = new FileReader();
         reader.onload = (e) => {
           this.previewImage = e.target.result;
@@ -348,16 +344,23 @@ export default {
     },
 
     async OnClickCreateNFT() {
-      // const { name, description, price, cid } = this.createNFT;
-      // if (!name || !description || !price || !cid) {
-      //   return;
-      // }
-      // const checksumAddress = this.web3.utils.toChecksumAddress(this.walletAddress);
-      // const priceInWei = this.web3.utils.toWei(price, "ether");
-      // const tx = await this.nftContract.methods.createNFT(name, description, priceInWei, cid).send({
-      //   from: checksumAddress,
-      //   value: priceInWei,
+      const { name, description, price, file } = this.createNFT;
+      if (!name || !description || !price || !file) {
+        return;
+      }
+
+      let cid = await this.addFileToIpfs(file);
+      //   this.images.push({
+      //    src: `${this.ipfs_gateway}${cid.path}`,
+      //    alt: file.name
       // });
+
+      const checksumAddress = this.web3.utils.toChecksumAddress(this.walletAddress);
+      const priceInWei = this.web3.utils.toWei(price, "ether");
+      const tx = await this.nftContract.methods.createNFT(name, description, priceInWei, cid).send({
+        from: checksumAddress,
+        value: priceInWei,
+      });
       console.log(this.createNFT);
     },
 

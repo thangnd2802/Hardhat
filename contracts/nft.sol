@@ -3,6 +3,7 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
@@ -11,7 +12,7 @@ error NFTMarket__ListingFee(uint256 requiered, string message);
 error NFTMarket__SetListingFee(string message);
 error NFTMarket__ItemId(string message);
 
-contract NFT is  ReentrancyGuard {
+contract NFT is  ERC721URIStorage, ReentrancyGuard {
     event marketItemNFT(
         uint256 indexed itemId,
         address indexed nftContract,
@@ -25,6 +26,7 @@ contract NFT is  ReentrancyGuard {
 
     uint256 private s_itemIds;
     uint256 private s_itemsSold;
+    address s_contractAddress;
 
     address payable private s_owner;
     uint256 private s_listingFee;
@@ -42,16 +44,13 @@ contract NFT is  ReentrancyGuard {
 
     mapping(uint256 => MarketItem) private s_MarketItems;
 
-    constructor() {
+    constructor(address _contractAddress) ERC721("QyxTokens", "QYX") {
+        s_contractAddress = _contractAddress;
         s_owner = payable(msg.sender);
         s_listingFee = 0.0025 ether;
     }
 
-    function createMarketItem(
-        address nftContract,
-        uint256 tokenId,
-        uint256 price
-    ) public payable nonReentrant {
+    function createMarketItem( address nftContract, uint256 tokenId, uint256 price) public payable nonReentrant {
         if (price <= 0)
             revert NFTMarket__Price({message: "Price must be above zero"});
         if (msg.value != s_listingFee)
@@ -89,11 +88,7 @@ contract NFT is  ReentrancyGuard {
         );
     }
 
-    function buyNFT(address nftContract, uint256 itemId)
-        public
-        payable
-        nonReentrant
-    {
+    function buyNFT(address nftContract, uint256 itemId) public payable nonReentrant {
         uint256 price = s_MarketItems[itemId].price;
         uint256 tokenId = s_MarketItems[itemId].tokenId;
         if (msg.value != price)
@@ -168,11 +163,7 @@ contract NFT is  ReentrancyGuard {
         return items;
     }
 
-    function getItemOwnerCount(uint256 totalItemsCount)
-        private
-        view
-        returns (uint256)
-    {
+    function getItemOwnerCount(uint256 totalItemsCount) private view returns (uint256){
         uint256 itemCount = 0;
         for (uint256 i = 0; i < totalItemsCount; i++) {
             if (s_MarketItems[i + 1].owner == msg.sender) {
@@ -182,11 +173,7 @@ contract NFT is  ReentrancyGuard {
         return itemCount;
     }
 
-    function getItemSellerCount(uint256 totalItemsCount)
-        private
-        view
-        returns (uint256)
-    {
+    function getItemSellerCount(uint256 totalItemsCount) private view returns (uint256) {
         uint256 itemCount = 0;
         for (uint256 i = 0; i < totalItemsCount; i++) {
             if (s_MarketItems[i + 1].seller == msg.sender) {

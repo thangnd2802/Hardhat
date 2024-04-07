@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs");
 
 async function main() {
-    const nft = await hre.ethers.getContractFactory("DNFT");
+    const nft = await hre.ethers.getContractFactory("NFT");
     const nftContract = await nft.deploy();
 
     await nftContract.waitForDeployment();

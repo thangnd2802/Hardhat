@@ -161,6 +161,23 @@ contract NFTMarket is  ReentrancyGuard {
         return items;
     }
 
+    function getSellingNFTBySeller() public view returns (MarketItem[] memory) {
+        uint256 totalItemsCount = s_itemIds;
+        uint256 itemCount = getItemSellingCount(totalItemsCount);
+        uint256 currentIndex = 0;
+
+        MarketItem[] memory items = new MarketItem[](itemCount);
+        for (uint256 i = 0; i < totalItemsCount; i++) {
+            if (s_MarketItems[i + 1].seller == msg.sender && !s_MarketItems[i + 1].sold) {
+                uint256 currentId = s_MarketItems[i + 1].itemId;
+                MarketItem storage currentItem = s_MarketItems[currentId];
+                items[currentIndex] = currentItem;
+                currentIndex++;
+            }
+        }
+        return items;
+    }
+
     function getItemOwnerCount(uint256 totalItemsCount) private view returns (uint256){
         uint256 itemCount = 0;
         for (uint256 i = 0; i < totalItemsCount; i++) {
@@ -175,6 +192,16 @@ contract NFTMarket is  ReentrancyGuard {
         uint256 itemCount = 0;
         for (uint256 i = 0; i < totalItemsCount; i++) {
             if (s_MarketItems[i + 1].seller == msg.sender) {
+                itemCount += 1;
+            }
+        }
+        return itemCount;
+    }
+
+    function getItemSellingCount(uint256 totalItemsCount) private view returns (uint256) {
+        uint256 itemCount = 0;
+        for (uint256 i = 0; i < totalItemsCount; i++) {
+            if (s_MarketItems[i + 1].seller == msg.sender && !s_MarketItems[i + 1].sold) {
                 itemCount += 1;
             }
         }

@@ -74,79 +74,50 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-12 gap-4 mt-2 h-screen">
+    <div class="flex gap-2 mt-1 ml-1 h-screen">
       
-      <div class="bg-base-300 flex justify-center">
-        <ul class="menu w-fit gap-4">
+      <div class="flex justify-center">
+        <ul class="menu w-fit bg-base-300 gap-4 rounded-box">
           <li>
-            <a class="tooltip tooltip-right" data-tip="Home">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+            <a  class="tooltip tooltip-right" data-tip="Home">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
             </a>
           </li>
           <li>
             <a class="tooltip tooltip-right" data-tip="Details">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </a>
           </li>
           <li>
             <a class="tooltip tooltip-right" data-tip="Stats">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
             </a>
           </li>
           <li>
             <a class="tooltip tooltip-right" data-tip="Home">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
             </a>
           </li>
           <li>
             <a class="tooltip tooltip-right" data-tip="Details">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </a>
           </li>
           <li>
             <a class="tooltip tooltip-right" data-tip="Stats">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-4/5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="col-span-8 bg-base-300 p-1">
-        <!-- <div class="flex justify-center w-full h-fit mt-2">
-          <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
-            <li>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                Inbox
-                <span class="badge badge-sm">99+</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Updates
-                <span class="badge badge-sm badge-warning">NEW</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                Stats
-                <span class="badge badge-xs badge-info"></span>
-              </a>
-            </li>
-          </ul>
-        </div> -->
-
-        <div role="tablist" class="w-fit tabs tabs-boxed bg-base-300 mx-auto">
-          <!-- <a role="tab" class="tab">Market</a>
-          <a role="tab" class="tab tab-active">Dashboard</a>
-          <a role="tab" class="tab">Setting</a> -->
-
+      <div class="flex-auto w-1/2 bg-base-300 p-1">
+        
+        <div role="tablist" class="w-fit tabs tabs-boxed bg-base-200 mt-1 mx-auto">
           <a  v-for="(tab, idx) in tabs"  role="tab" :class="{'tab': true, 'tab-active': idx === activeTab}"
             @click="activeTab = idx">
             {{ tab.name }}
           </a>
-
         </div>
 
         <div v-if="activeTab==0" >
@@ -167,68 +138,280 @@
             </div>
           </div>
         </div>
-        <div v-if="activeTab==1" >
-
-          <button class="btn btn-outline btn-secondary" onclick="createNFTModal.showModal()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-            Create NFT
-          </button>
+        <div v-if="activeTab==1"  class="h-screen" >
 
           <dialog id="createNFTModal" class="modal bg-base-300">
-            <div class="modal-box">
-              <form method="dialog">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-              </form>
-              <div class="card shrink-0 w-full shadow-2xl p-1">
-                <h3 class="card-title p-1">Create NFT</h3> 
-                <div class="card-body">
-                  <input type="text" placeholder="Asset name" class="input input-bordered input-info w-full" 
-                    :value="createNFT.name"
-                    @input="event => createNFT.name = event.target.value"
-                  />
-                  <textarea class="textarea textarea-accent" placeholder="Asset description"
-                    :value="createNFT.description"
-                    @input="event => createNFT.description = event.target.value"
-                  ></textarea>
-                  <input type="number" placeholder="Price" class="input input-bordered input-warning w-full" 
-                    :value="createNFT.price"
-                    @input="event => createNFT.price = event.target.value"
-                  />
+              <div class="modal-box">
+                <form method="dialog">
+                  <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <div class="card shrink-0 w-full shadow-2xl p-1">
+                  <h3 class="card-title p-1">Create NFT</h3> 
+                  <div class="card-body">
+                    <input type="text" placeholder="Asset name" class="input input-bordered input-info w-full" 
+                      :value="createNFT.name"
+                      @input="event => createNFT.name = event.target.value"
+                    />
+                    <textarea class="textarea textarea-accent" placeholder="Asset description"
+                      :value="createNFT.description"
+                      @input="event => createNFT.description = event.target.value"
+                    ></textarea>
+                    <input type="number" placeholder="Price" class="input input-bordered input-warning w-full" 
+                      :value="createNFT.price"
+                      @input="event => createNFT.price = event.target.value"
+                    />
 
-                  <div class="flex items-center justify-center w-full border-2 border-secondary border-dashed rounded-lg">
-                    
-                    <div v-if="createNFT.file" class="fbg-gray-700">
-                      <img class="h-auto max-w-full rounded-lg" :src="previewImage" alt="image description">
+                    <div class="flex items-center justify-center w-full border-2 border-secondary border-dashed rounded-lg">
+                      
+                      <div v-if="createNFT.file" class="fbg-gray-700">
+                        <img class="h-auto max-w-full rounded-lg" :src="previewImage" alt="image description">
+                      </div>
+                      
+                      <label v-else for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                              <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                              </svg>
+                              <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                              <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                          </div>
+                          <input id="dropzone-file" type="file" @change="onFileChange" class="hidden"/>
+                      </label>
                     </div>
                     
-                    <label v-else for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
-                            </svg>
-                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
-                            <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-                        </div>
-                        <input id="dropzone-file" type="file" @change="onFileChange" class="hidden"/>
-                    </label>
+            
+                    <button class="btn btn-outline btn-success" @click="OnClickCreateNFT" >Create</button>
                   </div>
-                  
-          
-                  <button class="btn btn-outline btn-success" @click="OnClickCreateNFT" >Create</button>
+                </div>
+
+              
+              </div>
+            </dialog>
+
+          <div class="stats shadow mt-2 flex justify-center">
+  
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div class="stat-title">Downloads</div>
+              <div class="stat-value">31K</div>
+              <div class="stat-desc">Jan 1st - Feb 1st</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+              </div>
+              <div class="stat-title">New Users</div>
+              <div class="stat-value">4,200</div>
+              <div class="stat-desc">↗︎ 400 (22%)</div>
+            </div>
+            
+            <div class="stat">
+              <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+              </div>
+              <div class="stat-title">New Registers</div>
+              <div class="stat-value">1,200</div>
+              <div class="stat-desc">↘︎ 90 (14%)</div>
+            </div>
+            
+          </div>
+
+          <div class="navbar bg-base-100 mt-1">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">Your NFTs</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <!-- <a class="btn">Button</a> -->
+              <button class="btn btn-outline btn-secondary" onclick="createNFTModal.showModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                Create NFT
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel carousel-start w-full p-4 space-x-4 bg-neutral rounded-box">
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="rounded-box" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="rounded-box" />
+            </div>
+          </div>
+
+          <div class="navbar bg-base-100 mt-1">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">Selling NFTs</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <!-- <a class="btn">Button</a> -->
+              
+            </div>
+          </div>
+
+          <div class="carousel carousel-start w-full p-4 space-x-4 bg-neutral rounded-box">
+            <div class="carousel-item card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Fashion</div> 
+                  <div class="badge badge-outline">Products</div>
                 </div>
               </div>
-
-            
             </div>
-          </dialog>
+            <div class="carousel-item card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Fashion</div> 
+                  <div class="badge badge-outline">Products</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Fashion</div> 
+                  <div class="badge badge-outline">Products</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Fashion</div> 
+                  <div class="badge badge-outline">Products</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Shoes!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Fashion</div> 
+                  <div class="badge badge-outline">Products</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          
+
+          
+          
           
         </div>
         <div v-if="activeTab==2" >Tab content 3</div>
         
       </div>
 
-      <div class="bg-base-300 col-span-3">
+      <div class="flex-auto bg-base-300 ">
 
       </div>
 
@@ -302,6 +485,7 @@ export default {
       //components control
       tabs : [{name: 'Market'}, {name: 'Dashboard'}, {name: 'Settings'}],
       activeTab: 0,
+      dashboardActiveTab: 0,
       // web3
       web3: new Web3(window.ethereum),
       chainId : '',

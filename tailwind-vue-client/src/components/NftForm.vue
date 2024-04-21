@@ -1,7 +1,7 @@
 <template>
     <dialog id="createNFTForm" class="modal">
-        <div class="modal-box md:max-w-[1100px] max-w-fit flex md:flex-row flex-col gap-20 justify-between items-center py-0 px-0">
-            <img class="md:block hidden self-stretch max-w-[37%] object-cover rouned-tl-[16px] rouned-bl-[16px]" :src="createNftImg" />
+        <div class="modal-box md:max-w-[1050px] max-w-fit flex md:flex-row flex-col gap-10 justify-between items-center py-0 px-0">
+            <img class="md:block hidden self-stretch max-w-[50%] object-cover rouned-tl-[16px] rouned-bl-[16px]" :src="createNftImg" />
             <img class="md:hidden block self-stretch object-cover rouned-tl-[16px] rouned-bl-[16px]" :src="createNftImgH" />
             <div class="flex-col justify-center px-5 items-center gap-[20px] py-5 flex">
                 <div class="self-stretch flex-col justify-start items-start gap-5 flex">

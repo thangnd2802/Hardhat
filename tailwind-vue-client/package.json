@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "kubo-rpc-client": "^3.0.4",
+    "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.0.13",
     "web3": "^4.7.0"

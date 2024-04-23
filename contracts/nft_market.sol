@@ -235,56 +235,45 @@ contract NFTMarket is  ReentrancyGuard {
     }
 
     function fetchMarketItems(
-        uint256 offset,
-        uint256 limit,
-        uint256 sold
+        uint256 itemFromIdx,
+        uint256 pageSize
     )
         public
         view
         returns (
             MarketItem[] memory,
-            uint256 nextOffset,
-            uint256 totalSolded
+            uint256 nextItemFromIdx
         )
     {
         uint256 itemsCount = s_itemIds;
-        uint256 unsoldItemsCount = itemsCount - s_itemsSold;
 
-        if (limit == 0) {
-            limit = 1;
+        require(itemFromIdx < itemsCount, "Out of range");
+
+        
+
+        if (pageSize > itemsCount - itemFromIdx) {
+            pageSize = itemsCount - itemFromIdx;
         }
 
-        if (limit > unsoldItemsCount - offset) {
-            limit = unsoldItemsCount - offset;
-        }
-
-        MarketItem[] memory items = new MarketItem[](limit);
+        MarketItem[] memory items = new MarketItem[](pageSize);
 
         uint256 currentIndex = 0;
-        uint256 index = 0;
-        uint256 solded = 0;
 
-        for (uint256 i = 0; i < itemsCount && currentIndex < limit; i++) {
-            index = offset + i + sold + 1;
-            if (index <= itemsCount) {
-                if (!s_MarketItems[index].sold) {
-                    uint256 currentItemId = s_MarketItems[index].itemId;
+        for (itemFromIdx; itemFromIdx < itemsCount && currentIndex < pageSize; itemFromIdx++) {
+            
+            
+                if (!s_MarketItems[itemFromIdx].sold) {
+                    uint256 currentItemId = s_MarketItems[itemFromIdx].itemId;
                     MarketItem storage marketItem = s_MarketItems[
                         currentItemId
                     ];
                     items[currentIndex] = marketItem;
                     currentIndex++;
-                } else {
-                    solded++;
                 }
-            }
         }
 
-        if ((offset + sold + 1) > itemsCount) {
-            solded = sold;
-        }
 
-        return (items, offset + limit, solded);
+        return (items, itemFromIdx);
     }
 
     function fetchMarketItemsByTime(uint256 time, uint256 limit)

@@ -45,19 +45,19 @@
                 <div class="self-stretch h-[0px] border border-neutral-700"></div>
                 <div class="w-[1050px] justify-start items-start inline-flex">
                     <div class="grow shrink basis-0 h-[60px] justify-start items-start flex">
-                        <div class="grow shrink basis-0 h-[60px] px-[30px] border-b-2 border-zinc-500 justify-center items-center gap-4 flex">
+                        <div class="grow shrink basis-0 h-[60px] px-[30px] hover:border-b-2 border-zinc-500 cursor-pointer justify-center items-center gap-4 flex">
                             <div class="text-center text-white text-[22px] font-semibold font-['Work Sans'] capitalize leading-[30.80px]">Created</div>
                             <div class="px-2.5 py-[5px] bg-zinc-500 rounded-[20px] justify-start items-center gap-2.5 flex">
                                 <div class="text-white text-base font-normal font-['Space Mono'] leading-snug">302</div>
                             </div>
                         </div>
-                        <div class="grow shrink basis-0 h-[60px] px-[30px] justify-center items-center gap-4 flex">
+                        <div class="grow shrink basis-0 h-[60px] px-[30px] hover:border-b-2 border-zinc-500 cursor-pointer justify-center items-center gap-4 flex">
                             <div class="text-center text-zinc-500 text-[22px] font-semibold font-['Work Sans'] capitalize leading-[30.80px]">owned</div>
                             <div class="px-2.5 py-[5px] bg-neutral-700 rounded-[20px] justify-start items-center gap-2.5 flex">
                                 <div class="text-white text-base font-normal font-['Space Mono'] leading-snug">67</div>
                             </div>
                         </div>
-                        <div class="grow shrink basis-0 h-[60px] px-[30px] justify-center items-center gap-4 flex">
+                        <div class="grow shrink basis-0 h-[60px] px-[30px] hover:border-b-2 border-zinc-500 cursor-pointer justify-center items-center gap-4 flex">
                             <div class="text-center text-zinc-500 text-[22px] font-semibold font-['Work Sans'] capitalize leading-[30.80px]">Collection</div>
                             <div class="px-2.5 py-[5px] bg-neutral-700 rounded-[20px] justify-start items-center gap-2.5 flex">
                                 <div class="text-white text-base font-normal font-['Space Mono'] leading-snug">4</div>

@@ -8,14 +8,21 @@
         <div class="self-stretch h-[0px] border border-neutral-700"></div>
         <div class="w-auto justify-start items-start inline-flex">
             <div class="h-[60px] justify-start items-start flex gap-5">
-                <div class="h-[60px] px-2.5 hover:border-b-2 border-zinc-500 justify-center items-center gap-4 flex">
-                    <div class="text-center text-white text-base font-semibold font-work-sans capitalize leading-snug">NFTs Market</div>
+                <div class="h-[60px] px-2.5 hover:border-b-2 border-zinc-500 justify-center items-center gap-4 flex cursor-pointer"
+                :class="{ 'border-b-2 cursor-default': currentTab === TabRender.NftMarket }"
+                @click="currentTab = TabRender.NftMarket"
+                >
+                    <div class="text-center text-base font-semibold font-work-sans capitalize leading-snug"
+                        :class="{ 'text-white': currentTab === TabRender.NftMarket }"
+                    >NFTs Market</div>
                 </div>
-                <div class="h-[60px] px-2.5 hover:border-b-2 border-zinc-500 justify-center items-center gap-4 flex">
-                    <div class="text-center text-zinc-500 text-base font-semibold font-work-sans capitalize leading-snug">Owned</div>
-                </div>
-                <div class="h-[60px] px-2.5 hover:border-b-2 border-zinc-500 justify-center items-center gap-4 flex">
-                    <div class="text-center text-zinc-500 text-base font-semibold font-work-sans capitalize leading-snug">Collections</div>
+                <div class="h-[60px] px-2.5 hover:border-b-2 border-zinc-500 justify-center items-center gap-4 flex cursor-pointer"
+                :class="{ 'border-b-2 cursor-default': currentTab === TabRender.NftCollection }"
+                @click="currentTab = TabRender.NftCollection"
+                >
+                    <div class="text-center text-base font-semibold font-work-sans capitalize leading-snug"
+                        :class="{ 'text-white': currentTab === TabRender.NftCollection }"
+                    >Collections</div>
                 </div>
             </div>
         </div>
@@ -41,6 +48,12 @@
 </template>
       
 <script type="text/javascript">
+
+let TabRender = {
+    NftMarket : "NFT",
+    NftCollection : "COLLECTION",
+}
+
 import NftItem from "./NftItem.vue";
 import Intro from "./Intro.vue";
       
@@ -49,6 +62,12 @@ import Intro from "./Intro.vue";
         components: {
             NftItem,
             Intro,
+        },
+        data() {
+            return {
+                TabRender,
+                currentTab: TabRender.NftMarket,
+            };
         },
       };
       
